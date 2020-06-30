@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4C4087A8-23F9-464F-8568-051A3D3BB600}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MyTest</RootNamespace>
+    <ProjectName>VinsCourse</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;GLOG_NO_ABBREVIATED_SEVERITIES;__linux__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>F:\All-3rdParty\Eigen\eigen3;F:\All-3rdParty\google-glog\include;F:\All-3rdParty\ceres\include;F:\All-3rdParty\Boost\include\boost-1_59;$(ProjectDir);F:\All-3rdParty\Pangolin_old\include;F:\All-3rdParty\glew\include;F:\All-3rdParty\libjpeg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>F:\All-3rdParty\ceres\lib;F:\All-3rdParty\Boost\lib;F:\All-3rdParty\google-glog\lib;F:\All-3rdParty\Pangolin_old\lib\;F:\All-3rdParty\glew\lib;F:\All-3rdParty\libjpeg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glog.lib;ceres.lib;pangolin.lib;glew.lib;jpeg.lib;opencv_objdetect2413.lib;opencv_ts2413.lib;opencv_video2413.lib;opencv_nonfree2413.lib;opencv_ocl2413.lib;opencv_photo2413.lib;opencv_stitching2413.lib;opencv_superres2413.lib;opencv_videostab2413.lib;opencv_calib3d2413.lib;opencv_contrib2413.lib;opencv_core2413.lib;opencv_features2d2413.lib;opencv_flann2413.lib;opencv_gpu2413.lib;opencv_highgui2413.lib;opencv_imgproc2413.lib;opencv_legacy2413.lib;opencv_ml2413.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="backend\backend.h" />
+    <ClInclude Include="backend\edge.h" />
+    <ClInclude Include="backend\edge_imu.h" />
+    <ClInclude Include="backend\edge_prior.h" />
+    <ClInclude Include="backend\edge_reprojection.h" />
+    <ClInclude Include="backend\eigen_types.h" />
+    <ClInclude Include="backend\imu_integration.h" />
+    <ClInclude Include="backend\loss_function.h" />
+    <ClInclude Include="backend\problem.h" />
+    <ClInclude Include="backend\vertex.h" />
+    <ClInclude Include="backend\vertex_inverse_depth.h" />
+    <ClInclude Include="backend\vertex_point_xyz.h" />
+    <ClInclude Include="backend\vertex_pose.h" />
+    <ClInclude Include="backend\vertex_speedbias.h" />
+    <ClInclude Include="camodocal\calib\CameraCalibration.h" />
+    <ClInclude Include="camodocal\camera_models\Camera.h" />
+    <ClInclude Include="camodocal\camera_models\CameraFactory.h" />
+    <ClInclude Include="camodocal\camera_models\CataCamera.h" />
+    <ClInclude Include="camodocal\camera_models\CostFunctionFactory.h" />
+    <ClInclude Include="camodocal\camera_models\EquidistantCamera.h" />
+    <ClInclude Include="camodocal\camera_models\PinholeCamera.h" />
+    <ClInclude Include="camodocal\camera_models\ScaramuzzaCamera.h" />
+    <ClInclude Include="camodocal\chessboard\Chessboard.h" />
+    <ClInclude Include="camodocal\chessboard\ChessboardCorner.h" />
+    <ClInclude Include="camodocal\chessboard\ChessboardQuad.h" />
+    <ClInclude Include="camodocal\chessboard\Spline.h" />
+    <ClInclude Include="camodocal\gpl\EigenQuaternionParameterization.h" />
+    <ClInclude Include="camodocal\gpl\EigenUtils.h" />
+    <ClInclude Include="camodocal\gpl\gpl.h" />
+    <ClInclude Include="camodocal\sparse_graph\Transform.h" />
+    <ClInclude Include="estimator.h" />
+    <ClInclude Include="factor\integration_base.h" />
+    <ClInclude Include="feature_manager.h" />
+    <ClInclude Include="feature_tracker.h" />
+    <ClInclude Include="initial\initial_alignment.h" />
+    <ClInclude Include="initial\initial_ex_rotation.h" />
+    <ClInclude Include="initial\initial_sfm.h" />
+    <ClInclude Include="initial\solve_5pts.h" />
+    <ClInclude Include="parameters.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="System.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="thirdparty\Sophus\se3.hpp" />
+    <ClInclude Include="thirdparty\Sophus\so3.hpp" />
+    <ClInclude Include="thirdparty\Sophus\sophus.hpp" />
+    <ClInclude Include="unistd.h" />
+    <ClInclude Include="utility\tic_toc.h" />
+    <ClInclude Include="utility\utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="backend\edge.cc" />
+    <ClCompile Include="backend\edge_imu.cc" />
+    <ClCompile Include="backend\edge_prior.cpp" />
+    <ClCompile Include="backend\edge_reprojection.cc" />
+    <ClCompile Include="backend\imu_integration.cc" />
+    <ClCompile Include="backend\loss_function.cc" />
+    <ClCompile Include="backend\problem.cc" />
+    <ClCompile Include="backend\vertex.cc" />
+    <ClCompile Include="backend\vertex_pose.cc" />
+    <ClCompile Include="camodocal\calib\CameraCalibration.cc" />
+    <ClCompile Include="camodocal\camera_models\Camera.cc" />
+    <ClCompile Include="camodocal\camera_models\CameraFactory.cc" />
+    <ClCompile Include="camodocal\camera_models\CataCamera.cc" />
+    <ClCompile Include="camodocal\camera_models\CostFunctionFactory.cc" />
+    <ClCompile Include="camodocal\camera_models\EquidistantCamera.cc" />
+    <ClCompile Include="camodocal\camera_models\PinholeCamera.cc" />
+    <ClCompile Include="camodocal\camera_models\ScaramuzzaCamera.cc" />
+    <ClCompile Include="camodocal\chessboard\Chessboard.cc" />
+    <ClCompile Include="camodocal\gpl\EigenQuaternionParameterization.cc" />
+    <ClCompile Include="camodocal\gpl\gpl.cc" />
+    <ClCompile Include="camodocal\intrinsic_calib.cc" />
+    <ClCompile Include="camodocal\sparse_graph\Transform.cc" />
+    <ClCompile Include="CurveFitting.cpp" />
+    <ClCompile Include="estimator.cpp" />
+    <ClCompile Include="feature_manager.cpp" />
+    <ClCompile Include="feature_tracker.cpp" />
+    <ClCompile Include="initial\initial_aligment.cpp" />
+    <ClCompile Include="initial\initial_ex_rotation.cpp" />
+    <ClCompile Include="initial\initial_sfm.cpp" />
+    <ClCompile Include="initial\solve_5pts.cpp" />
+    <ClCompile Include="parameters.cpp" />
+    <ClCompile Include="run_euroc.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="System.cpp" />
+    <ClCompile Include="unistd.cpp" />
+    <ClCompile Include="utility\utility.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="backend">
+      <UniqueIdentifier>{6541374f-82e5-4bf2-8375-16ae322745b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="camodacal">
+      <UniqueIdentifier>{e1f0f588-a82b-4d4b-9ea2-12ba24c29233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="factor">
+      <UniqueIdentifier>{46eadcdb-ea41-454c-b4c7-b849d071ba0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="initial">
+      <UniqueIdentifier>{27a9a700-c64c-4ed6-b60e-a20b6aa21002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{35d6c4d8-8a1b-459d-adab-0f488665ac02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{e9d84411-3128-4a7e-94d2-1952e1a78927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="camodacal\calib">
+      <UniqueIdentifier>{fecd94cb-fc5d-4453-a975-c3f73355a197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="camodacal\camera_models">
+      <UniqueIdentifier>{522f015d-7aa1-468b-b54d-22965115e246}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="camodacal\chessboard">
+      <UniqueIdentifier>{d47f7ba8-12fe-480d-b851-ad7081a4863e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="camodacal\gpl">
+      <UniqueIdentifier>{fad0ad79-5f2f-4dea-98a2-3b533dafa254}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="camodacal\sparse_graph">
+      <UniqueIdentifier>{ac6e36bc-99e0-46c2-bf6c-2e7ee7f4a814}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\Sophus">
+      <UniqueIdentifier>{ec1fcf6e-680a-4de3-8753-56ea3540db0d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="estimator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="feature_manager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="feature_tracker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="parameters.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\backend.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\edge.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\edge_imu.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\edge_prior.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\edge_reprojection.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\eigen_types.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\imu_integration.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\loss_function.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\problem.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\vertex.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\vertex_inverse_depth.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\vertex_point_xyz.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\vertex_pose.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="backend\vertex_speedbias.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\calib\CameraCalibration.h">
+      <Filter>camodacal\calib</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\camera_models\Camera.h">
+      <Filter>camodacal\camera_models</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\camera_models\CameraFactory.h">
+      <Filter>camodacal\camera_models</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\camera_models\CataCamera.h">
+      <Filter>camodacal\camera_models</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\camera_models\CostFunctionFactory.h">
+      <Filter>camodacal\camera_models</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\camera_models\EquidistantCamera.h">
+      <Filter>camodacal\camera_models</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\camera_models\PinholeCamera.h">
+      <Filter>camodacal\camera_models</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\camera_models\ScaramuzzaCamera.h">
+      <Filter>camodacal\camera_models</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\chessboard\Chessboard.h">
+      <Filter>camodacal\chessboard</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\chessboard\ChessboardCorner.h">
+      <Filter>camodacal\chessboard</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\chessboard\ChessboardQuad.h">
+      <Filter>camodacal\chessboard</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\chessboard\Spline.h">
+      <Filter>camodacal\chessboard</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\gpl\EigenQuaternionParameterization.h">
+      <Filter>camodacal\gpl</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\gpl\EigenUtils.h">
+      <Filter>camodacal\gpl</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\gpl\gpl.h">
+      <Filter>camodacal\gpl</Filter>
+    </ClInclude>
+    <ClInclude Include="camodocal\sparse_graph\Transform.h">
+      <Filter>camodacal\sparse_graph</Filter>
+    </ClInclude>
+    <ClInclude Include="factor\integration_base.h">
+      <Filter>factor</Filter>
+    </ClInclude>
+    <ClInclude Include="initial\initial_alignment.h">
+      <Filter>initial</Filter>
+    </ClInclude>
+    <ClInclude Include="initial\initial_ex_rotation.h">
+      <Filter>initial</Filter>
+    </ClInclude>
+    <ClInclude Include="initial\initial_sfm.h">
+      <Filter>initial</Filter>
+    </ClInclude>
+    <ClInclude Include="initial\solve_5pts.h">
+      <Filter>initial</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\tic_toc.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\utility.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\Sophus\se3.hpp">
+      <Filter>thirdparty\Sophus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\Sophus\so3.hpp">
+      <Filter>thirdparty\Sophus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\Sophus\sophus.hpp">
+      <Filter>thirdparty\Sophus</Filter>
+    </ClInclude>
+    <ClInclude Include="unistd.h">
+      <Filter>camodacal\gpl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="estimator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="feature_manager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="feature_tracker.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="parameters.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CurveFitting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="run_euroc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\edge.cc">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\edge_imu.cc">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\edge_prior.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\edge_reprojection.cc">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\imu_integration.cc">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\loss_function.cc">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\problem.cc">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\vertex.cc">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="backend\vertex_pose.cc">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="camodocal\intrinsic_calib.cc">
+      <Filter>camodacal</Filter>
+    </ClCompile>
+    <ClCompile Include="camodocal\calib\CameraCalibration.cc">
+      <Filter>camodacal\calib</Filter>
+    </ClCompile>
+    <ClCompile Include="camodocal\camera_models\Camera.cc">
+      <Filter>camodacal\camera_models</Filter>
+    </ClCompile>
+    <ClCompile Include="camodocal\camera_models\CameraFactory.cc">
+      <Filter>camodacal\camera_models</Filter>
+    </ClCompile>
+    <ClCompile Include="camodocal\camera_models\CataCamera.cc">
+      <Filter>camodacal\camera_models</Filter>
+    </ClCompile>
+    <ClCompile Include="camodocal\camera_models\CostFunctionFactory.cc">
+      <Filter>camodacal\camera_models</Filter>
+    </ClCompile>
+    <ClCompile Include="camodocal\camera_models\EquidistantCamera.cc">
+      <Filter>camodacal\camera_models</Filter>
+    </ClCompile>
+    <ClCompile Include="camodocal\camera_models\PinholeCamera.cc">
+      <Filter>camodacal\camera_models</Filter>
+    </ClCompile>
+    <ClCompile Include="camodocal\camera_models\ScaramuzzaCamera.cc">
+      <Filter>camodacal\camera_models</Filter>
+    </ClCompile>
+    <ClCompile Include="camodocal\chessboard\Chessboard.cc">
+      <Filter>camodacal\chessboard</Filter>
+    </ClCompile>
+    <ClCompile Include="camodocal\gpl\EigenQuaternionParameterization.cc">
+      <Filter>camodacal\gpl</Filter>
+    </ClCompile>
+    <ClCompile Include="camodocal\gpl\gpl.cc">
+      <Filter>camodacal\gpl</Filter>
+    </ClCompile>
+    <ClCompile Include="camodocal\sparse_graph\Transform.cc">
+      <Filter>camodacal\sparse_graph</Filter>
+    </ClCompile>
+    <ClCompile Include="initial\initial_aligment.cpp">
+      <Filter>initial</Filter>
+    </ClCompile>
+    <ClCompile Include="initial\initial_ex_rotation.cpp">
+      <Filter>initial</Filter>
+    </ClCompile>
+    <ClCompile Include="initial\initial_sfm.cpp">
+      <Filter>initial</Filter>
+    </ClCompile>
+    <ClCompile Include="initial\solve_5pts.cpp">
+      <Filter>initial</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\utility.cpp">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="unistd.cpp">
+      <Filter>camodacal\gpl</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

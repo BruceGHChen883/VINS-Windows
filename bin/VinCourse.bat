@@ -1,0 +1,1 @@
+VinsCourse.exe ./dataset/EuRoC/MH_05/mav0/ ./config/
