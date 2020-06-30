@@ -27,6 +27,9 @@ VinCourse.bat
 ```
 
 ## Acknowledgements
-# Vins Course use [VINS-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono) as our base line code. Thanks Dr. Qin Tong, Prof. Shen etc very much.
-I used the # Vins Course. thanks to He Yijia, Gao Xiang, Cui huakun, Zhao Song
+
+# Vins Course use [VINS-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono) 
+as our base line code. Thanks Dr. Qin Tong, Prof. Shen etc very much.
+
+I used the # Vins Course as bases. thanks to He Yijia, Gao Xiang, Cui huakun, Zhao Song
 
