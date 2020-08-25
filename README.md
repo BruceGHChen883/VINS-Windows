@@ -25,6 +25,7 @@ Open VinsCourse.sln with Visual Studio 2013~2019 and Build.
 cd bin
 VinCourse.bat
 ```
+The EuroC dataset can be found here :https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets#downloads
 
 ## Acknowledgements
 
@@ -32,4 +33,3 @@ VinCourse.bat
 as our base line code. Thanks Dr. Qin Tong, Prof. Shen etc very much.
 
 I used the # Vins Course as bases. thanks to He Yijia, Gao Xiang, Cui huakun, Zhao Song
-
