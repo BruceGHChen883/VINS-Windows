@@ -305,8 +305,5 @@
     <ClCompile Include="utility\utility.cpp">
       <Filter>utility</Filter>
     </ClCompile>
-    <ClCompile Include="unistd.cpp">
-      <Filter>camodacal\gpl</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

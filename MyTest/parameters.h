@@ -54,7 +54,7 @@ extern double SOLVER_TIME;
 extern int NUM_ITERATIONS;
 extern std::string EX_CALIB_RESULT_PATH;
 extern std::string VINS_RESULT_PATH;
-//extern std::string IMU_TOPIC;
+extern std::string IMU_TOPIC;
 extern double TD;
 extern double TR;
 extern int ESTIMATE_TD;

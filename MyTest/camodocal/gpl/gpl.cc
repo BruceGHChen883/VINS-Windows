@@ -1,13 +1,9 @@
 #include "stdafx.h"
 #include "camodocal/gpl/gpl.h"
 #include "unistd.h"
-
+#define M_PI 3.1415926
 #define CLOCK_REALTIME 0
 //#define timespec timeval
-
-#ifndef M_PI
-#define M_PI 3.14159265358979323846
-#endif
 
 #include <set>
 #ifdef _WIN32
@@ -150,9 +146,7 @@ clock_gettime(int X, struct timeval *tp)
     microseconds = (double)t.QuadPart / frequencyToMicroseconds;
     t.QuadPart = microseconds;
     tp->tv_sec = t.QuadPart / 1000000;
-	tp->tv_usec = t.QuadPart % 1000000;
-	//tp->tv_sec = t.QuadPart / 1000000;
-	//tp->tv_nsec = (t.QuadPart % 1000000) * 1000;
+    tp->tv_usec = t.QuadPart;
     return (0);
 }
 #endif
@@ -181,8 +175,6 @@ double timeInSeconds(void)
 	 return static_cast<double>(tp.tv_sec) +
 			 static_cast<double>(tp.tv_usec) / 1000000.0;
 }
-
-
 
 /*
 #ifdef _WIN32
